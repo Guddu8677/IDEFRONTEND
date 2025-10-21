@@ -1,0 +1,32 @@
+/* layout */
+.ide-root { display:flex; height: calc(100vh - 56px); }
+.ide-left { width: 260px; background:var(--panel-bg); border-right:1px solid var(--border-color); padding:12px; overflow:auto; }
+.ide-center { flex:1; padding:10px; background:var(--bg); overflow:hidden; }
+.ide-right { width:420px; background:var(--panel-bg); border-left:1px solid var(--border-color); padding:12px; }
+
+/* filetree */
+.filetree-header { font-weight:700; color:var(--accent); margin-bottom:10px; }
+.filetree-create { display:flex; gap:8px; margin-bottom:10px; }
+.filetree-create input { flex:1; padding:8px; border-radius:8px; border:1px solid var(--border-color); background:var(--card-bg); color:var(--text); }
+.filetree-create button { padding:8px 10px; background:var(--accent); border:none; color:white; border-radius:6px; cursor:pointer; }
+.filetree-list { list-style:none; padding:0; margin:0; }
+.filetree-list li { display:flex; justify-content:space-between; align-items:center; padding:8px; border-radius:6px; margin-bottom:6px; background:transparent; }
+.filetree-list li .file-name { background:none; border:none; color:var(--text); cursor:pointer; text-align:left; font-size:14px; }
+.filetree-list li .file-del { background:transparent; border:none; color:var(--muted); cursor:pointer; }
+
+/* tabs/editor */
+.tabs { display:flex; gap:8px; margin-bottom:8px; }
+.tab { padding:8px 12px; border-radius:8px; background:var(--card-bg); color:var(--muted); cursor:pointer; }
+.tab.active { background:var(--panel-bg); color:var(--text); border:1px solid var(--border-color); }
+
+/* code area */
+.codebox { height: calc(100vh - 160px); display:flex; flex-direction:column; border-radius:10px; overflow:hidden; background:#0b0b0b; border:1px solid var(--border-color); }
+.codebox-header { padding:10px; background:var(--card-bg); color:var(--muted); font-weight:600; border-bottom:1px solid var(--border-color); }
+.code-textarea { flex:1; width:100%; padding:16px; border:none; outline:none; resize:none; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; font-size:14px; color:var(--text); background:transparent; }
+
+/* preview */
+.preview-shell { height: calc(100vh - 100px); display:flex; flex-direction:column; }
+.preview-iframe { flex:1; width:100%; border-radius:8px; border:1px solid rgba(0,0,0,0.2); background:white; }
+
+/* small */
+.editor-empty, .auth-page { display:flex; align-items:center; justify-content:center; height:100%; }

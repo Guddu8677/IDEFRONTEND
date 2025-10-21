@@ -1,0 +1,6 @@
+.dashboard-root { height:100vh; display:flex; flex-direction:column; }
+.dashboard-top { height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; background:var(--card-bg); border-bottom:1px solid var(--border-color); }
+.brand { font-weight:700; color:var(--accent-color); }
+.top-actions { display:flex; align-items:center; gap:8px; }
+.theme-btn, .logout-btn { padding:6px 10px; border-radius:6px; border:none; background:var(--panel-bg); color:var(--text-color); cursor:pointer; }
+.username { margin-left:8px; color:var(--text-color); }
